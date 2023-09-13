@@ -1,35 +1,40 @@
-@import './base.css';
+/* @import './base.css'; */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+.gaia-mobile-v2-portal-announcement-container,
+.gaia-mobile-v2-portal-appwidget-container,
+.gaia-mobile-v2-portal-spacewidget-container {
+  display: none;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.van-hairline--top-bottom::after,
+.van-hairline-unset--top-bottom::after {
+  border-width: 0;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.gaia-mobile-v2-viewpanel-header {
+  background-color: #4b4b4b;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.gaia-mobile-v2-viewpanel-contents {
+  border-radius: 0;
 }
+
+.van-tabbar {
+  width: 100vw;
+}
+
+.van-tabbar--fixed {
+  left: unset;
+}
+
+.gaia-mobile-v2-portal-header-container .gaia-mobile-v2-portal-header::after {
+  background: none;
+}
+
+
+.group-module-background {
+  background-color: rgba(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 #ced3d4;
+}
+
