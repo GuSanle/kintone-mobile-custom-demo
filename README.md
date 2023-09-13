@@ -1,6 +1,7 @@
 # kintone-mobile-custom
 This is a kintone mobile customize demo. It uses Vite as the development build tool.
 kintone vite plugin : vite-plugin-kintone-dev
+vite4 + vue3  + vant4 + typescript
 
 ## .env setting
 ```
