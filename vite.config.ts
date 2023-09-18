@@ -10,7 +10,7 @@ import kintoneDev from 'vite-plugin-kintone-dev'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    kintoneDev({ outputName: 'mobile' }),
+    kintoneDev({ outputName: 'mobile', upload: true }),
     vue(),
     Components({
       resolvers: [IconsResolver()],
