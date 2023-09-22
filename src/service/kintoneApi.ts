@@ -1,5 +1,5 @@
 import { KintoneRestAPIClient } from '@kintone/rest-api-client'
-const APP_ID = import.meta.env.VITE_APP_ID
+import type { GoodListAppRecord } from '@/types/restApiRecords'
 
 export class KintoneApi {
   client: KintoneRestAPIClient
@@ -7,7 +7,7 @@ export class KintoneApi {
     this.client = new KintoneRestAPIClient({})
   }
 
-  public async getAllRecords() {
-    return await this.client.record.getAllRecords<kintoneRestApi.GoodListAppRecord>({ app: APP_ID })
+  public async getAllRecords(app: string) {
+    return await this.client.record.getAllRecords<GoodListAppRecord>({ app })
   }
 }

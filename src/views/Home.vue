@@ -10,15 +10,17 @@ import { ref } from 'vue'
 import type { Ref } from 'vue'
 import { Card, List } from 'vant'
 import { KintoneApi } from '@/service/kintoneApi'
+import type { GoodListAppRecord } from '@/types/restApiRecords'
 
-const list: Ref<kintoneRestApi.GoodListAppRecord[]> = ref([])
+const list: Ref<GoodListAppRecord[]> = ref([])
 
 const loading = ref(false);
 const finished = ref(false);
 
 const onLoad = () => {
   const kintoneClient = new KintoneApi()
-  kintoneClient.getAllRecords().then((res) => {
+  const appId = import.meta.env.VITE_APP_ID
+  kintoneClient.getAllRecords(appId).then((res) => {
     list.value = res
     loading.value = false;
     finished.value = true;
