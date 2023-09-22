@@ -11,7 +11,8 @@ import type { Ref } from 'vue'
 import { Card, List } from 'vant'
 import { KintoneApi } from '@/service/kintoneApi'
 
-const list: Ref<kintone.types.Fields[]> = ref([])
+const list: Ref<kintoneRestApi.GoodListAppRecord[]> = ref([])
+
 const loading = ref(false);
 const finished = ref(false);
 
