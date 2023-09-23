@@ -1,5 +1,4 @@
 import { KintoneRestAPIClient } from '@kintone/rest-api-client'
-import type { GoodListAppRecord } from '@/types/restApiRecords'
 
 export class KintoneApi {
   client: KintoneRestAPIClient
@@ -8,7 +7,7 @@ export class KintoneApi {
   }
 
   public async getAllRecords(app: string) {
-    return await this.client.record.getAllRecords<GoodListAppRecord>({ app })
+    return await this.client.record.getAllRecords<kintoneRest.GoodListAppRecord>({ app })
   }
 
   public async getRecords(
@@ -17,7 +16,12 @@ export class KintoneApi {
     query?: string,
     totalCount?: boolean,
   ) {
-    const result = await this.client.record.getRecords<Partial<GoodListAppRecord>>({ app, fields, query, totalCount })
+    const result = await this.client.record.getRecords<Partial<kintoneRest.GoodListAppRecord>>({
+      app,
+      fields,
+      query,
+      totalCount,
+    })
     return result.records
   }
 }

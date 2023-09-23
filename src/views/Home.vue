@@ -10,9 +10,9 @@ import { ref } from 'vue'
 import type { Ref } from 'vue'
 import { Card, List } from 'vant'
 import { KintoneApi } from '@/service/kintoneApi'
-import type { GoodListAppRecord } from '@/types/restApiRecords'
 
-const list: Ref<GoodListAppRecord[]> = ref([])
+
+const list: Ref<kintoneRest.GoodListAppRecord[]> = ref([])
 
 const loading = ref(false);
 const finished = ref(false);
