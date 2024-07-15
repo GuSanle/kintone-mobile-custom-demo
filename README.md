@@ -1,39 +1,36 @@
 # kintone-mobile-custom
+
 This is a kintone mobile customize demo. It uses Vite as the development build tool.
-kintone vite plugin : [vite-plugin-kintone-dev](https://github.com/GuSanle/vite-plugin-kintone-dev)   
-npm: npm i -D vite-plugin-kintone-dev    
-This project use : vite4 + vue3  + vant4 + typescript    
+kintone vite plugin : [vite-plugin-kintone-dev](https://github.com/GuSanle/vite-plugin-kintone-dev)
 
-## .env setting
+This project use : vite4 + vue3 + vant4 + typescript
+
+## Setp
+
+1. Import the kintone-template(Goods list.zip) to your kintone.
+2. Add some demo records
+3. Navigate to your project directory: cd [your porject]
+4. Install the project dependencies:
+
 ```
-VITE_APP_ID=xx
-```   
-## Import the template    
-1. Import the kintone-template(Goods list.zip) to your kintone.    
-2. Add some demo records   
-
-## Note
-If you encounter a TS error with the @kintone/rest-api-client@4.1.0 version, please modify    node_modules/@vue/tsconfig/tsconfig.json.    
-```json
-// modify "moduleResolution": "bundler" => "node"
-"moduleResolution": "node"
-```   
-
-## Project Setup
-
-```sh
 npm install
 ```
 
+5. Start the development server:
 
-### Compile and Hot-Reload for Development
-
-```sh
+```
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+6. Follow the on-screen guide to automatically generate the .env.development file.
+7. Update the .env.development file with the kintone application ID for the “Goods list” app:
 
-```sh
-npm run build
-```
+## Plugin Information
+
+For more details about the vite-plugin-kintone-dev, visit the GitHub repository:
+[vite-plugin-kintone-dev](https://github.com/GuSanle/vite-plugin-kintone-dev)
+
+## Explanations in the article about this project
+
+[Vite を使用した kintone モバイルカスタム開発](https://zenn.dev/pokemon36/articles/b0ca52ffd039ab)  
+https://storage.googleapis.com/zenn-user-upload/e90d341d760d-20230913.png
