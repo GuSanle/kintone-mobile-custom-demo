@@ -23,7 +23,11 @@ npm run dev
 ```
 
 6. Follow the on-screen guide to automatically generate the .env.development file.
-7. Update the .env.development file with the kintone application ID for the “Goods list” app:
+7. Update the .env.development file and add the kintone application ID for the “Goods list” app:
+
+```
+VITE_APP_ID=xx
+```
 
 ## Plugin Information
 
@@ -33,4 +37,4 @@ For more details about the vite-plugin-kintone-dev, visit the GitHub repository:
 ## Explanations in the article about this project
 
 [Vite を使用した kintone モバイルカスタム開発](https://zenn.dev/pokemon36/articles/b0ca52ffd039ab)  
-https://storage.googleapis.com/zenn-user-upload/e90d341d760d-20230913.png
+<img src="images/vantdemo.png" width="200" >
