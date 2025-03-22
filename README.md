@@ -13,13 +13,13 @@ This project use : vite4 + vue3 + vant4 + typescript
 4. Install the project dependencies:
 
 ```
-npm install
+pnpm install
 ```
 
 5. Start the development server:
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 6. Follow the on-screen guide to automatically generate the .env.development file.
